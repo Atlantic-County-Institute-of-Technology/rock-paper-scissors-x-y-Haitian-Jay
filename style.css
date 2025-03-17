@@ -1,0 +1,65 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+.container {
+    position: absolute;
+    border: dashed;
+    border-color: black;
+    height: fit-content;
+    width: 100px;
+    margin: auto;
+    top: 100px;
+
+}
+
+.Rock {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border-color: black;
+    background-color: red;
+}
+
+.Paper {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border-color: black;
+    background-color: blue;
+}
+
+.Scissors {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border-color: black;
+    background-color: green;
+}
+
+.player-container {
+    border: dashed;
+    border-color: blue;
+    height: 200px;
+    width: 100px;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+
+
+.player1 {
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    position: absolute;
+}
+
+.player2 {
+    height: 100px;
+    width: 100px;
+    background-color: aquamarine;
+    position: absolute;
+    top: 100px;
+}
+
+}
