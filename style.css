@@ -1,6 +1,9 @@
 body {
     display: flex;
     justify-content: center;
+    background: rgb(238,174,217);
+background: radial-gradient(circle, rgba(238,174,217,1) 0%, rgba(148,188,233,1) 100%);
+align-items: center;
 }
 .container {
     position: absolute;
@@ -10,8 +13,8 @@ body {
     width: 100px;
     margin: auto;
     top: 100px;
-
 }
+
 
 .Rock {
     height: 100px;
@@ -19,6 +22,8 @@ body {
     border-radius: 50%;
     border-color: black;
     background-color: red;
+    box-shadow: 0px 10px 1px black;
+    text-shadow: 1px 0px 5px;
 }
 
 .Paper {
@@ -37,29 +42,82 @@ body {
     background-color: green;
 }
 
+
 .player-container {
     border: dashed;
     border-color: blue;
-    height: 200px;
-    width: 100px;
+    height: fit-content;
+    width: fit-content;
     position: absolute;
     left: 100px;
     top: 100px;
-
+    
+}
 
 .player1 {
     height: 100px;
     width: 100px;
     background-color: black;
-    position: absolute;
+    position: relative;
 }
 
 .player2 {
     height: 100px;
     width: 100px;
     background-color: aquamarine;
-    position: absolute;
-    top: 100px;
+    position: relative; 
 }
 
+
+.text-box-container {
+    width: 580px;
+    position: absolute;
+    top: 800px;
+}
+
+.entryarea {
+    position: relative;
+    height: 90px;
+    line-height: 80px;
+}
+
+input{
+    position: absolute;
+    width: 100%;
+    outline: none;
+    font-size: 2.2em;
+    padding: 0 30px;
+    line-height: 80px;
+    border-radius: 10px;
+    border: 2px solid white;
+    background: transparent;
+    transition: 0.1s ease;
+    z-index: 1111;
+}
+
+.labelline{
+    position: absolute;
+    font-size: 1.6em;
+    color: white;
+    padding: 0 25px;
+    margin: 0 20px;
+    background-color: radial-gradient(circle, rgba(238,174,217,1) 0%, rgba(148,188,233,1) 100%);
+    transition: 0.2s ease;
+
+}
+
+input:focus,
+input:valid {
+    color: green;
+    border: 4px solid green;
+}
+
+input:focus + .labelline,
+input:valid + .labelline{
+    color: green;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 12px;
+    transform: translate(-15px,-16px) scale(0.88);
+    z-index: 1111;
 }
