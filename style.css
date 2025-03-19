@@ -7,12 +7,14 @@ align-items: center;
 }
 .container {
     position: absolute;
-    border: dashed;
+    border: hidden;
     border-color: black;
     height: fit-content;
-    width: 100px;
+    width: fit-content;
     margin: auto;
-    top: 100px;
+    top: 300px;
+    display: flex;
+    flex-direction: row;
 }
 
 
@@ -22,8 +24,15 @@ align-items: center;
     border-radius: 50%;
     border-color: black;
     background-color: red;
-    box-shadow: 0px 10px 1px black;
-    text-shadow: 1px 0px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 10px 1px grey;
+    cursor: pointer;
+    position: relative;
+    right: 10px;
+
+    
 }
 
 .Paper {
@@ -32,6 +41,13 @@ align-items: center;
     border-radius: 50%;
     border-color: black;
     background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 10px 1px grey;
+    cursor: pointer;
+    position: relative;
+    right: 5px;
 }
 
 .Scissors {
@@ -40,6 +56,43 @@ align-items: center;
     border-radius: 50%;
     border-color: black;
     background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 10px 1px grey;
+    cursor: pointer;
+}
+
+.Lizard {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border-color: black;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 10px 1px grey;
+    cursor: pointer;
+    position: relative;
+    left: 5px;
+    
+}
+
+.Spock {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border-color: black;
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 10px 1px grey;
+    cursor: pointer;
+    position: relative;
+    left: 10px;
+    
 }
 
 
@@ -50,29 +103,24 @@ align-items: center;
     width: fit-content;
     position: absolute;
     left: 100px;
-    top: 100px;
+    top: 200px;
     
 }
 
 .player1 {
-    height: 100px;
-    width: 100px;
-    background-color: black;
+    height: 500px;
+    width: 500px;
     position: relative;
+    top: 100px;
 }
 
-.player2 {
-    height: 100px;
-    width: 100px;
-    background-color: aquamarine;
-    position: relative; 
-}
+
 
 
 .text-box-container {
     width: 580px;
     position: absolute;
-    top: 800px;
+    top: 50px;
 }
 
 .entryarea {
@@ -93,6 +141,7 @@ input{
     background: transparent;
     transition: 0.1s ease;
     z-index: 1111;
+   
 }
 
 .labelline{
@@ -103,21 +152,24 @@ input{
     margin: 0 20px;
     background-color: radial-gradient(circle, rgba(238,174,217,1) 0%, rgba(148,188,233,1) 100%);
     transition: 0.2s ease;
+    
 
 }
 
 input:focus,
 input:valid {
-    color: green;
-    border: 4px solid green;
+    color: black;
+    border: 4px solid blue;
 }
 
 input:focus + .labelline,
 input:valid + .labelline{
-    color: green;
+    color: blue;
     height: 30px;
     line-height: 30px;
     padding: 0 12px;
     transform: translate(-15px,-16px) scale(0.88);
     z-index: 1111;
+    transition: 0.2s ease;
+    color: transparent;
 }
