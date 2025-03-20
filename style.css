@@ -7,14 +7,14 @@ align-items: center;
 }
 .container {
     position: absolute;
-    border: hidden;
+    border: dashed;
     border-color: black;
-    height: fit-content;
-    width: fit-content;
+    height: 650px;
     margin: auto;
-    top: 300px;
+    top: 250px;
     display: flex;
     flex-direction: row;
+    width: 700px;
 }
 
 
@@ -54,7 +54,6 @@ align-items: center;
     height: 100px;
     width: 100px;
     border-radius: 50%;
-    border-color: black;
     background-color: green;
     display: flex;
     align-items: center;
@@ -63,49 +62,9 @@ align-items: center;
     cursor: pointer;
 }
 
-.Lizard {
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    border-color: black;
-    background-color: yellow;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0px 10px 1px grey;
-    cursor: pointer;
-    position: relative;
-    left: 5px;
-    
-}
-
-.Spock {
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    border-color: black;
-    background-color: orange;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0px 10px 1px grey;
-    cursor: pointer;
-    position: relative;
-    left: 10px;
-    
-}
 
 
-.player-container {
-    border: dashed;
-    border-color: blue;
-    height: fit-content;
-    width: fit-content;
-    position: absolute;
-    left: 100px;
-    top: 200px;
-    
-}
+
 
 .player1 {
     height: 500px;
