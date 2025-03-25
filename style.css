@@ -5,6 +5,7 @@ body {
 background: radial-gradient(circle, rgba(238,174,217,1) 0%, rgba(148,188,233,1) 100%);
 align-items: center;
 }
+
 .container {
     position: absolute;
     border: dashed;
@@ -17,54 +18,45 @@ align-items: center;
     width: 700px;
 }
 
-
-.Rock {
+.choice {
     height: 100px;
     width: 100px;
+    border-color: 2px solid black;
     border-radius: 50%;
-    border-color: black;
-    background-color: red;
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 0px 10px 1px grey;
-    cursor: pointer;
     position: relative;
     left: 210px;
     top: 250px;
+}
 
-    
+.choice:hover {
+    cursor: pointer;
+    border: 2px solid red;
+}
+
+.choice:active {
+    border: 2px solid black;
+    /* TODO: Make the button look "pressed" */
+}
+
+
+.Rock {
+    background-color: red;    
 }
 
 .Paper {
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    border-color: black;
+    
     background-color: blue;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0px 10px 1px grey;
-    cursor: pointer;
-    position: relative;
-    left: 215px;
-    top: 250px;
+    
 }
 
 .Scissors {
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
+    
     background-color: green;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0px 10px 1px grey;
-    cursor: pointer;
-    left: 220px;
-    top: 250px;
-    position: relative;
+    
 }
 
 .scoreboard{
@@ -77,7 +69,6 @@ align-items: center;
     bottom: 200px;
     font-display: white;
     font-weight: 700;
-
 }
 
 .wins-losses {
@@ -87,7 +78,8 @@ align-items: center;
     width: 225px;
     position: relative;
     margin: auto;
-    
+    right: 225px;
+    bottom: 100px;
 }
 
 
@@ -97,6 +89,7 @@ align-items: center;
     width: 500px;
     position: relative;
     top: 100px;
+    
 }
 
 
