@@ -1,5 +1,7 @@
 const choices =["rock", "paper", "scissors"];
 const resultElement = document.getElementById('result');
+let playerChoice = 0
+let computerChoice = 0
 
 const rock = document.getElementById('button1');
 const paper = document.getElementById('button2');
@@ -26,20 +28,27 @@ function cpuchoice() {
     
 // })
 
-const playerChoice = button.id;
-const computerChoice = choices;
-const winner = determineWinner (playerChoice, computerChoice);
+
 
 function determineWinner(player, computer) {
-    resultElement.textContent = `You chose ${playerChoice} computer chose ${computerChoice}`;
+    resultElement.textContent = "";
+    resultElement.textContent = `You chose ${choices[player - 1]} computer chose ${choices[computer - 1]}`;
+    
     if (player === computer) {
-        return "It's a tie!";
+        resultElement.textContent = resultElement.textContent + "It's a tie!";
     } else if (
         (player === 1 && computer === 1)
         (player === 2 && computer === 2)
         (player === 3 && computer === 3)
-    ){
-        return 'You win';
-    } 
+    )
+
+        
+    if (player === computer) {
+        resultElement.textContent = resultElement + 'You win';
+    } else if (
+        (player === 1 && computer === 3)
+        (player === 2 && computer === 1)
+        (player === 3 && computer === 2)
+
+    )
 }
-    
